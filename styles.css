@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(45deg, #8fd7e7ee, #1b89f8);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  font-family: "Arial", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Define keyframe animation for moving gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 10% 50%;
+  }
+}
+
+.calculator-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 320px;
+}
+
+.screen {
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#calc-display {
+  width: 100%;
+  font-size: 32px;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #444;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.operation {
+  background-color: #ec5dbe;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.equals {
+  background-color: #53a366;
+  grid-column: span 4;
+}
+
+.voice-section {
+  margin-top: 20px;
+}
+
+.voice-btn {
+  background-color: #20a1d0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+  margin: 10px 0;
+}
+
+#result-output {
+  color: #28a745;
+}
